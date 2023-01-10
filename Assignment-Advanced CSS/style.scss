@@ -1,0 +1,654 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #c3cfe2;
+    padding: 40px;
+/********************  testimonial  ********************/
+    .testimonial{ 
+        width: 100%;      
+        .testimonial-box1{
+            background-color: white;
+            width:100%;
+            height: 600px;
+            border-radius: 30px 30px 0px 0px;
+            p{
+                padding: 20px;
+                font-size: 50px;
+            }            
+        }
+        .testimonial-box2{
+            width: 100%;
+            height: 100px ;
+            background-color: #686de0;
+            text-align: center;
+            line-height: 100px;
+            img{               
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 10px solid white;
+                position: relative;
+                top: -100px; 
+                bottom: -100px; 
+                
+            }  
+        }
+        .testimonial-box3{
+            background-color: #686de0;
+            width: 100%;
+            height: 100px;
+            h1{
+                color: white;
+                text-align: center;
+                line-height: 100px;
+                font-size: 40px;             
+            }
+        }
+        .testimonial-box4{
+            width: 100%;
+            height: 200px;
+            background-color: #686de0;
+            border-radius: 0px 0px 30px 30px;
+            text-align: center;
+            line-height: 100px;
+            a{
+                text-decoration: none;
+                color: #b0b2e8;
+                font-weight: bold;
+                font-size: 30px;
+                &:hover{
+                    color: #2e318f;
+                }
+            }
+        }
+    }
+
+/********************  portfolio  ********************/
+    .portfolio{
+        width: 100%;
+        height: auto;
+        margin-top: 10px ;
+        padding: 20px;
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        
+        .portfolio-box{
+            width: 500px;
+            height: 600px;
+            background-color: gray;
+            border-radius: 30px;
+
+            position: relative;
+            z-index: 1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                position: relative;
+                z-index: 2;
+              }
+            .button {
+                text-align: center;
+                position: absolute;
+                z-index: 0;
+                color: black;
+                font-size: 15px;
+                background-color: white;
+                padding: 10px 20px;
+                border-radius: 20px;
+            }
+            &.portfolio-box:hover img {
+                display: none;
+              }
+        }
+    
+    }
+/********************  social-media  ********************/
+    .social-media{
+        clear: both;
+        margin-top: 10px ;
+        width: 100%;
+        height: 100%;
+        background-color: #c3cfe2;
+
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .blog {
+            background-color: #e17b77;
+            width: 48px;
+            height: 48px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            a{
+                text-decoration: none;
+                display: block;
+                width: 48px;
+                height: 48px;
+            }
+            &:hover{
+                width: 300px;
+            }
+        }
+        .facebook {
+            background-color: #3b5998;
+            width: 48px;
+            height: 48px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            a{
+                text-decoration: none;
+                display: block;
+                width: 48px;
+                height: 48px;
+            }
+            &:hover{
+                width: 300px;
+            }
+        }
+        .twitter {
+            background-color: #00aced;
+            width: 48px;
+            height: 48px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            a{
+                text-decoration: none;
+                display: block;
+                width: 48px;
+                height: 48px;
+            }
+            &:hover{
+                width: 300px;
+            }
+        }
+        .github {
+            background-color: #333;
+            width: 48px;
+            height: 48px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            a{
+                text-decoration: none;
+                display: block;
+                width: 48px;
+                height: 48px;
+            }
+            &:hover{
+                width: 300px;
+            }
+        }
+        .linkedin {
+            background-color: #007bb6;
+            width: 48px;
+            height: 48px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            a{
+                text-decoration: none;
+                display: block;
+                width: 48px;
+                height: 48px;
+            }
+            &:hover{
+                width: 300px;
+            }
+        }
+
+
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    /* For tablet: */ 
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #c3cfe2;
+        padding: 40px;
+
+/********************  testimonial  ********************/
+        .testimonial{       
+            .testimonial-box1{
+                background-color: white;
+                width:100%;
+                height: 600px;
+                border-radius: 30px 30px 0px 0px;
+                p{
+                    padding: 20px;
+                    font-size: 50px;
+                }            
+            }
+            .testimonial-box2{
+                width: 100%;
+                height: 100px ;
+                background-color: #686de0;
+                text-align: center;
+                line-height: 100px;
+                img{               
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    border: 10px solid white;
+                    position: relative;
+                    top: -100px; 
+                    bottom: -100px;                 
+                }  
+            }
+            .testimonial-box3{
+                background-color: #686de0;
+                width: 100%;
+                height: 100px;
+                h1{
+                    color: white;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 40px;             
+                }
+            }
+            .testimonial-box4{
+                width: 100%;
+                height: 200px;
+                background-color: #686de0;
+                border-radius: 0px 0px 30px 30px;
+                text-align: center;
+                line-height: 100px;
+                a{
+                    text-decoration: none;
+                    color: #b0b2e8;
+                    font-weight: bold;
+                    font-size: 30px;
+                    &:hover{
+                        color: #2e318f;
+                    }
+                }
+            }
+        }
+/********************  portfolio  ********************/
+        .portfolio{
+            width: 100%;
+            height: auto;
+            margin-top: 10px ;
+            padding: 20px;
+            display: grid;
+            grid-gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            
+            .portfolio-box{
+                width: 300px;
+                height: 400px;
+                background-color: gray;
+                border-radius: 30px;
+    
+                position: relative;
+                z-index: 1;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                    position: relative;
+                    z-index: 2;
+                  }
+                .button {
+                    text-align: center;
+                    position: absolute;
+                    z-index: 0;
+                    color: black;
+                    font-size: 15px;
+                    background-color: white;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                }
+                &.portfolio-box:hover img {
+                    display: none;
+                  }
+            } 
+        }
+        .social-media{
+            clear: both;
+            margin-top: 10px ;
+            width: 100%;
+            height: 100%;
+            background-color: #c3cfe2;
+
+            display:flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .blog {
+                background-color: #e17b77;
+                width: 48px;
+                height: 48px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+                &:hover{
+                    width: 300px;
+                }
+            }
+            .facebook {
+                background-color: #3b5998;
+                width: 48px;
+                height: 48px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+                &:hover{
+                    width: 300px;
+                }
+            }
+            .twitter {
+                background-color: #00aced;
+                width: 48px;
+                height: 48px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+                &:hover{
+                    width: 300px;
+                }
+            }
+            .github {
+                background-color: #333;
+                width: 48px;
+                height: 48px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+                &:hover{
+                    width: 300px;
+                }
+            }
+            .linkedin {
+                background-color: #007bb6;
+                width: 48px;
+                height: 48px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+                &:hover{
+                    width: 300px;
+                }
+            }
+
+
+        }
+    }
+}    
+@media only screen and (min-width: 992px) {
+    /* For desktop: */ 
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #c3cfe2;
+        padding: 40px;
+/********************  testimonial  ********************/
+        .testimonial{ 
+            width: 70%;
+
+            .testimonial-box1{
+                background-color: white;
+                width:100%;
+                height: 600px;
+                border-radius: 30px 30px 0px 0px;
+                p{
+                    padding: 20px;
+                    font-size: 50px;
+                }            
+            }
+            .testimonial-box2{
+                width: 100%;
+                height: 100px ;
+                background-color: #686de0;
+                text-align: center;
+                line-height: 100px;
+                img{               
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    border: 10px solid white;
+                    position: relative;
+                    top: -100px; 
+                    bottom: -100px;                 
+                }  
+            }
+            .testimonial-box3{
+                background-color: #686de0;
+                width: 100%;
+                height: 100px;
+                h1{
+                    color: white;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 40px;             
+                }
+            }
+            .testimonial-box4{
+                width: 100%;
+                height: 200px;
+                background-color: #686de0;
+                border-radius: 0px 0px 30px 30px;
+                text-align: center;
+                line-height: 100px;
+                a{
+                    text-decoration: none;
+                    color: #b0b2e8;
+                    font-weight: bold;
+                    font-size: 30px;
+                    &:hover{
+                        color: #2e318f;
+                    }
+                }
+            }
+        }
+/********************  portfolio  ********************/
+        .portfolio{
+            width: 70%;
+            height: auto;
+            margin-top: 10px ;
+            margin-bottom: 10px ;
+            
+            padding: 20px;
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            
+            .portfolio-box{
+
+                width: 100%;
+                height: auto;
+                background-color: gray;
+                border-radius: 30px;
+    
+                position: relative;
+                z-index: 1;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 30px;
+                    position: relative;
+                    z-index: 2;
+                    
+                  }
+                .button {
+                    text-align: center;
+                    position: absolute;
+                    z-index: 0;
+                    color: black;
+                    font-size: 15px;
+                    background-color: white;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    
+                }
+                &.portfolio-box:hover img {
+                    display: none;
+                  }
+    
+    
+            }
+    
+             
+        }
+/********************  social-media  ********************/
+        .social-media{
+            clear: both;
+            margin-top: 10px ;
+            width: 100%;
+            height: 100%;
+            background-color: #c3cfe2;
+
+            display:flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .blog {
+                background-color: #e17b77;
+                width: 48px;
+                height: 48px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+                &:hover{
+                    width: 300px;
+                }
+            }
+            .facebook {
+                background-color: #3b5998;
+                width: 48px;
+                height: 48px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+                &:hover{
+                    width: 300px;
+                }
+            }
+            .twitter {
+                background-color: #00aced;
+                width: 48px;
+                height: 48px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+                &:hover{
+                    width: 300px;
+                }
+            }
+            .github {
+                background-color: #333;
+                width: 48px;
+                height: 48px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+                &:hover{
+                    width: 300px;
+                }
+            }
+            .linkedin {
+                background-color: #007bb6;
+                width: 48px;
+                height: 48px;
+                transition-property: width;
+                transition-duration: 2s;
+                transition-timing-function: linear;
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                }
+                &:hover{
+                    width: 300px;
+                }
+            }
+
+
+        }
+    }
+}
